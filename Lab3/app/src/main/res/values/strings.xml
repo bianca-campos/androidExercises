@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movies Info</string>
+
+    <string-array name="movies">
+        <item>Catch Me If You Can</item>
+        <item>Fight Club</item>
+        <item>Forrest Gump</item>
+        <item>Good Will Hunting</item>
+        <item>Pulp Fiction</item>
+        <item>The Godfather</item>
+        <item>The Hangover</item>
+        <item>The Shawshank Redemption</item>
+        <item>Titanic</item>
+    </string-array>
+</resources>

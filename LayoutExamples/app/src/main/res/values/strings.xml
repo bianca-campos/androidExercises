@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ninja Turtles</string>
+    <string name="topLabel">Widget Exercises</string>
+    <string name="topLabelChanged">Hello World</string>
+
+    <string-array name="tmnt">
+        <item>Ninja Turtles</item>
+        <item>Leonardo</item>
+        <item>Raphael</item>
+        <item>Michelangelo</item>
+        <item>Donatello</item>
+    </string-array>
+</resources>
