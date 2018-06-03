@@ -1,0 +1,1 @@
+include ':app', ':fluid-slider-0.3.0'
