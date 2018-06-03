@@ -10,87 +10,86 @@
     android:padding="5dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="cursive"
+        android:textColor="#595959"
+        android:gravity="top"
+        android:text="Quotes"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_weight="8"
+    <Button
+        android:id="@+id/btnCallJson"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:onClick="callApi"
+        android:text="Get Your Quote Here"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="53dp"
-            android:layout_gravity="center"
-            android:fontFamily="cursive"
-            android:gravity="top"
-            android:text="Quotes"
-            android:textSize="50sp" />
-
-        <Button
-            android:id="@+id/btnCallJson"
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"
-            android:onClick="callApi"
-            android:text="Get Your Quote Here"
-            android:textSize="15sp" />
-
-
-        <TextView
-            android:id="@+id/tvJson"
-            android:layout_width="match_parent"
-            android:layout_height="324dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:gravity="center"
-            android:padding="10sp"
-            android:paddingRight="10dp"
-            android:textAlignment="center" />
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/tvJson"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textAlignment="center" />
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="37dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
 
         <Button
             android:id="@+id/btnBackground"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="#AA709F"
             android:onClick="setBackgroundColor"
             android:text="Background"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnFontType"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="#AA709F"
             android:onClick="setFontType"
             android:text="Font type"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnFontColor"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="#AA709F"
             android:onClick="setFontColor"
             android:text="font color"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="24dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -102,39 +101,37 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="8"
-            android:max="100"
-            android:progress="50" />
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:max="100"
+                android:progress="50" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="A+"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="A+"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_weight="1"
+    <Button
+        android:id="@+id/btnDownload"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="10dp"
+        android:background="#AA709F"
+        android:onClick="downloadImg"
+        android:text="Download"
+        android:textSize="12sp" />
 
-        <Button
-            android:id="@+id/btnDownload"
-            android:layout_width="wrap_content"
-            android:layout_height="22dp"
-            android:onClick="downloadImg"
-            android:text="Download"
-            android:textSize="10sp" />
-    </LinearLayout>
 </LinearLayout>

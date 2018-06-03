@@ -62,9 +62,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
     private void getJson() {
         Ion.with(this)
                 .load("http://api.forismatic.com/api/1.0/")
